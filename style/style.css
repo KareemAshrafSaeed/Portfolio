@@ -14,6 +14,7 @@ body
 
 #navigationBar
 {
+    overflow-x: hidden;
     display: flex;   
     flex-wrap: wrap;
     justify-content: center;
@@ -58,6 +59,7 @@ body
 }
 #HomePage
 {
+    
     width: 100%;
     min-height: 100vh;
     background:url("Home.jpg") no-repeat;
@@ -113,6 +115,8 @@ body
 
 .Page
 {
+    overflow-y: hidden;
+    overflow-x: hidden;
     padding-top: 6%;
     padding-bottom: 0% ;
     display: flex;
@@ -251,17 +255,20 @@ body
     display: flex;   
     flex-wrap: wrap;
     justify-content: center;
-    gap:120px;
+    gap:80px;
     margin-top: 20px;
 }
 .btn
 {
-text-align: center;
-border-radius: 5px / 5px;
-border-color: #3e3ebc;
-font-size: 20px;
-background-color: white;
-transition: 0.8s ease;
+    all:unset;
+    text-align: center;
+    width: 100px;
+    border-radius: 50px / 50px;
+    border-style:solid;
+    border-color: #3e3ebc;
+    font-size: 20px;
+    background-color: white;
+    transition: 0.8s ease;
 }
 .btn:hover{
     color: white;
@@ -282,7 +289,8 @@ transition: 0.8s ease;
     position: relative;
 }
 .footer{
-        
+    overflow-x: hidden;
+
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -424,6 +432,17 @@ transition: 0.8s ease;
 }
 @media screen and (max-width:1323px )
 {
+    .btn:hover{
+        color: white;
+        background-color: #3e3ebc;
+        font-size:large;
+        transform:scale(1.2);
+        
+    }
+    .btn
+    {
+        width: 102px;
+    }
     .detailsII
     {
         gap:1px;
@@ -437,6 +456,17 @@ transition: 0.8s ease;
      }
 }
 @media screen and (max-width:1023px ) {
+    .btn:hover{
+        color: white;
+        background-color: #3e3ebc;
+        font-size:larger;
+        transform:scale(1.2);
+        
+    }
+    .btn
+    {
+        width: 104px;
+    }
     .detailsII
     {
         bottom: 20px;
@@ -478,6 +508,17 @@ transition: 0.8s ease;
     }
 }
 @media screen and (max-width:800px ){
+    .btn
+    {
+        width: 90px;
+    }
+    .btn:hover{
+        color: white;
+        background-color: #3e3ebc;
+        font-size:larger;
+        transform:scale(1.2);
+        
+    }
     .detailsII
     {
         gap: 10px;
@@ -515,6 +556,17 @@ transition: 0.8s ease;
     }
 }
 @media screen and (max-width:590px ){
+    .btn
+    {
+        width: 75px;
+    }
+    .btn:hover{
+        color: white;
+        background-color: #3e3ebc;
+        font-size:small;
+        transform:scale(1.0);
+        
+    }
     .detailsII
     {
         gap: 1px;
@@ -565,6 +617,18 @@ transition: 0.8s ease;
     }
 }
 @media screen and (max-width:500px ){
+    .btn
+    {
+        width: 63px;
+        font-size: 10px;
+    }
+    .btn:hover{
+        color: white;
+        background-color: #3e3ebc;
+        font-size:small;
+        transform:scale(1.0);
+        
+    }
     .detailsII
     {
         position: relative;
@@ -609,6 +673,13 @@ transition: 0.8s ease;
 }
 }
 @media screen and (max-width:400px ){
+    .btn:hover{
+        color: white;
+        background-color: #3e3ebc;
+        font-size:small;
+        transform:scale(1.0);
+        
+    }
     .detailsII
     {
         gap: 2px;
@@ -645,7 +716,7 @@ transition: 0.8s ease;
         gap:18px ;
     }
     .btn{
-        font-size: 12px;
+        font-size: 8px;
     }
     .div55{
         font-size: 20px;
