@@ -111,19 +111,22 @@ body
 }
 
 
-#ServicesPage
+.Page
 {
-    padding-top: 5%;
+    padding-top: 6%;
+    padding-bottom: 0% ;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
     min-height: 90vh;
     gap: 1px;
+    position: relative;
 }
 
 .Cards
 {   
+    overflow: hidden;
     margin-top: 20px;
     display: flex;
     justify-content: center;
@@ -154,29 +157,27 @@ body
     transform:scale(1.05);
 }
 
-#ServicesPage
-{
-    position: relative;
-    /* top:75px; */
-}
 
 .title
 {
+    margin: 1px;
     display: flex;
     color: rgb(48, 48, 136);
     /* margin: 25px; */
     justify-content: center;
+    font-size: 35px;
 }
 
 #ServPar
 {
     margin: 1px;
-    margin-bottom: 70px;
+    margin-bottom: 30px;
 }
 
 .PortfolioClass
 {
     padding-top: 4%;
+    padding-bottom: 4%;
     display: flex;
     gap:20px;
     flex-direction: column;
@@ -344,6 +345,80 @@ transition: 0.8s ease;
     font-size: larger;
 }
 
+.Description
+{
+    font-size: 35px; 
+    margin: 1px;
+}
+
+.people
+{ 
+    color:#3e3ebc;
+    background-color: rgb(250, 248, 248);
+    display: flex;   
+    border-radius: 20px;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    text-align: center;
+    height: 30vh;
+    width: 40vh;
+    transition: 0.7s ease;
+}
+
+.rate
+{
+    color: rgb(254, 195, 0);
+    position: relative;
+    right: 10vh;
+    bottom:-1vh;
+}
+
+.personName
+{
+    color: black;
+    font-weight: 500;
+    position: relative;
+    bottom: 3vh;
+    left: -1vh;
+    margin: 0px;
+}
+.jobTitle
+{
+    color: darkgray;
+    font-weight: 400;
+    position: relative;
+    bottom: 5.6vh;
+    left: -6.5vh;
+    margin: 0px;
+}
+
+
+
+.personPic
+{
+
+    position: relative;
+    right: 14vh;
+    top:5vh;
+    display: inline;
+    height: 8vh;
+    width: 8vh;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+.opinion
+{   
+    color: black;
+    margin: 1vh;
+    font-size: 2vh;
+    text-align: left;
+    position: relative;
+    top:2vh;
+    left:1vh;
+}
 
 
 
