@@ -375,8 +375,6 @@ transition: 0.8s ease;
     color: black;
     font-weight: 500;
     position: relative;
-    bottom: 3vh;
-    left: -1vh;
     margin: 0px;
 }
 .jobTitle
@@ -384,9 +382,18 @@ transition: 0.8s ease;
     color: darkgray;
     font-weight: 400;
     position: relative;
-    bottom: 5.6vh;
-    left: -6.5vh;
     margin: 0px;
+    bottom:5vh;
+}
+.detailsII
+{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    position: relative;
+    bottom: 3vh;
+    left: 11vh;
+    gap: 0vh;
 }
 
 
@@ -415,7 +422,13 @@ transition: 0.8s ease;
     top:2vh;
     left:1vh;
 }
-@media screen and (max-width:1323px ){
+@media screen and (max-width:1323px )
+{
+    .detailsII
+    {
+        gap:1px;
+        bottom: 23px;
+    }
     .NameJob{
         font-size: 40px;
     } 
@@ -424,6 +437,11 @@ transition: 0.8s ease;
      }
 }
 @media screen and (max-width:1023px ) {
+    .detailsII
+    {
+        bottom: 20px;
+        gap: 15px;
+    }
     #navigationBar{
         padding: 12px 10px;
         gap: 20px;
@@ -460,6 +478,10 @@ transition: 0.8s ease;
     }
 }
 @media screen and (max-width:800px ){
+    .detailsII
+    {
+        gap: 10px;
+    }
     .bttn{
         gap:40px ;
     }
@@ -493,6 +515,10 @@ transition: 0.8s ease;
     }
 }
 @media screen and (max-width:590px ){
+    .detailsII
+    {
+        gap: 1px;
+    }
     .NameJob{
         font-size: 17px;
         padding: 2px;
@@ -539,6 +565,12 @@ transition: 0.8s ease;
     }
 }
 @media screen and (max-width:500px ){
+    .detailsII
+    {
+        position: relative;
+        bottom: 13px;
+        gap: 7px;
+    }
 .Project-card{
     min-height: 1em;
     width: 7.5em;
@@ -577,6 +609,10 @@ transition: 0.8s ease;
 }
 }
 @media screen and (max-width:400px ){
+    .detailsII
+    {
+        gap: 2px;
+    }
     .HomePage{
         flex-direction: column;
         align-items: center;
@@ -594,6 +630,7 @@ transition: 0.8s ease;
     .S{
         height: 200px;
         width: 200px;
+        padding: 28px;
     }
     #fass{
         font-size: 50px;
