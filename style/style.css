@@ -61,7 +61,7 @@ body
 {
     width: 100%;
     min-height: 100vh;
-    background:url("Hom1e.jpg") no-repeat;
+    background:url("Home.jpg") no-repeat;
     background-size:cover;
     position: relative;
 }
