@@ -35,15 +35,15 @@ body
     transform: scale(1.1);
     color: white;
 }
-#CV button
+.CV button
 {
     all: unset;
     text-align: center;
-    border-color: #3e3ebc;
+    border-color: rgb(48, 48, 136);
     color:whitesmoke;
-    background-color: #3e3ebc;
-    width: 10%;
-    height: 5%;
+    background-color: rgb(48, 48, 136);
+    min-width: 10%;
+    min-height: 5%;
     z-index: 100;
     position: absolute;
     right: 6%;
@@ -52,11 +52,10 @@ body
     opacity: 0.9;
 }
 
-#CV button:hover
+.CV button:hover
 {
     opacity: 1;
 }
-
 #HomePage
 {
     width: 100%;
@@ -64,6 +63,7 @@ body
     background:url("Home.jpg") no-repeat;
     background-size:cover;
     position: relative;
+    display: flex;
 }
 
 .NameJob
@@ -121,18 +121,21 @@ body
     width: 100%;
     min-height: 90vh;
     gap: 1px;
-    position: relative;
 }
 
 .Cards
 {   
-    overflow: hidden;
     margin-top: 20px;
     display: flex;
     justify-content: center;
     gap: 70px;
     flex-direction: row;
     flex-wrap: wrap;
+}
+.Description
+{
+    font-size: 35px; 
+    margin: 1px;
 }
 
 .S
@@ -248,15 +251,12 @@ body
     display: flex;   
     flex-wrap: wrap;
     justify-content: center;
-    gap:150px;
+    gap:120px;
     margin-top: 20px;
 }
 .btn
 {
-all:unset;
 text-align: center;
-width: 100px;
-height: 35px;
 border-radius: 5px / 5px;
 border-color: #3e3ebc;
 font-size: 20px;
@@ -345,11 +345,7 @@ transition: 0.8s ease;
     font-size: larger;
 }
 
-.Description
-{
-    font-size: 35px; 
-    margin: 1px;
-}
+
 
 .people
 { 
@@ -419,6 +415,242 @@ transition: 0.8s ease;
     top:2vh;
     left:1vh;
 }
+@media screen and (max-width:1323px ){
+    .NameJob{
+        font-size: 40px;
+    } 
+    .col-md-6{
+        font-size: 16px; 
+     }
+}
+@media screen and (max-width:1023px ) {
+    #navigationBar{
+        padding: 12px 10px;
+        gap: 20px;
+    }
+    .title{
+        font-size: 30px;
+    }
+    .DutchImg{
+        display: none;
+    }
+    .CV button{
+        /* display: none; */
+        /* margin-top: 30px; */
+        top: 20%;
+        left: 50%;
+        transform:translate(-50%,0) ;
+        font-size: 15px;
+        
+    }
+    .NameJob{
+        font-size: 30px;
+    }
+    .bttn{
+        gap:100px ;
+    }
+   .Description{
+    font-size: 30px;
+   }
+   .personName{
+    font-size: 15px;
+   }
+   .col-md-6{
+    font-size: 14px; 
+    }
+}
+@media screen and (max-width:800px ){
+    .bttn{
+        gap:40px ;
+    }
+    .btn{
+        font-size: 15px;
+    }
+    .div55{
+        font-size: 25px;
+    }
+    .Project-card{
+        min-height: 6em;
+        width: 10em;
+    }
+    .Description{
+        font-size: 28px;
+    }
+    .personName{
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .jobTitle{
+        font-size: 15px;
+    }
+    .Contact .S{
+        height: 200px;
+        width: 250px;
+        font-size:14px ;
+    }
+    .col-md-6{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:590px ){
+    .NameJob{
+        font-size: 17px;
+        padding: 2px;
+        width: 100%;
+    } 
+    .Bio{
+        font-size: 10px;
+        width: 100%;
+    }
+    .Project-card{
+        min-height: 1.5em;
+        width: 10em;
+    }
+    .Project-description{
+        font-size: 10px;
+    }
+    .Project-title{
+        font-size: 15px;
+    }
+    .Project-link{
+        font-size: 20px;
+    }
+    .Description{
+        font-size: 25px;
+       }
+    .navigationBar{
+        padding: 10px 8px;
+        gap: 15px;
+    }
+    .personPic{
+        height: 7vh;
+         width: 7vh;
+    }
+    .content{
+        gap: 30px;  
+    }
+    .Contact .S{
+        height: 180px;
+        width: 220px;
+        font-size:12px ;
+    }
+    .col-md-6{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:500px ){
+.Project-card{
+    min-height: 1em;
+    width: 7.5em;
+}
+.Project-description{
+    font-size: 8px;
+}
+.Project-title{
+    font-size: 10px;
+}
+.Project-link{
+    font-size: 18.5px;
+}
+.navigationBar a{
+    padding: 0px;
+    font-size: 16px;
+    padding: 10px;
+    font-weight: 300;
+}
+.title{
+    font-size: 25px;
+}
+#navigationBar{
+    gap: 0px;
+}
+.bttn{
+    gap:30px ;
+}
+.content{
+    gap: 15px;  
+}
+.Contact .S{
+    height: 160px;
+    width: 180px;
+    font-size:11px ;
+}
+}
+@media screen and (max-width:400px ){
+    .HomePage{
+        flex-direction: column;
+        align-items: center;
+    }
+    .NameJob{
+       padding: 1px 10px;
 
-
-
+    } 
+    .navigationBar a{
+        padding: 8px 6px;
+        font-size: 13px;
+        padding: 10px;
+        font-weight: 300;
+    }
+    .S{
+        height: 200px;
+        width: 200px;
+    }
+    #fass{
+        font-size: 50px;
+    }
+    #des2{
+        font-size: 10px;
+    }
+    #des1{
+        font-size: 17px;
+    }
+    .bttn{
+        gap:18px ;
+    }
+    .btn{
+        font-size: 12px;
+    }
+    .div55{
+        font-size: 20px;
+    }
+    .Project-card{
+        min-height: 1em;
+        width: 5em;
+    }
+    .Project-description{
+        font-size: 7px;
+    }
+    .Project-title{
+        font-size: 8px;
+    }
+    .Project-link{
+        font-size: 10px;
+    }
+    .Description{
+        font-size: 20px;
+    }
+    .ServPar{
+        font-size: 10px;
+    }
+    .content{
+        flex-direction: column;
+        align-items: center;
+        gap:1px ;
+    }
+    .Contact .S{
+        height: 150px;
+        width: 200px;
+        font-size:10px ;
+    }
+    #C1{
+        margin-bottom: 15px;
+    }
+    .Contact .title{
+        margin-bottom: 50px;
+        position: absolute;
+        top:40px;
+    }
+    .col-md-6{
+        font-size: 10px; 
+    }
+}
